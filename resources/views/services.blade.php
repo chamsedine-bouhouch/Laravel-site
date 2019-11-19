@@ -1,55 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>AllooService</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/jquery-ui.css">
-
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-
-
-
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/ionicons.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-Shop.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-         <!-- Header include -->
-   <?php 
-   include("includes/header.php"); 
-   ?>
-
+@extends('templateServices')
+@section('contenu')
 <div class="collapse navbar-collapse" id="ftco-nav">
    <ul class="navbar-nav mr-auto">
     <li class="nav-item "><a href="./" class="nav-link pl-0">Acceuil</a></li>
@@ -138,7 +88,7 @@
                 </figure>
                 <div class="block-4-text p-4">
                   <h3><a href="shop-single.php">Fuite </a></h3>
-                  <p class="mb-0">Fuite au niveau du lavabo, levier</p>
+                  <p class="mb-0">Fuite au niveau du lavabo</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
@@ -156,38 +106,14 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-              <div class="block-4 text-center border">
-                <figure class="block-4-image">
-                  <a href="shop-single.php"><img src="img/cloth_3.jpg" alt="Image placeholder" class="img-fluid"></a>
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">T-Shirt Mockup</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-              <div class="block-4 text-center border">
-                <figure class="block-4-image">
-                  <a href="shop-single.php"><img src="img/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+<div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
               <div class="block-4 text-center border">
                 <figure class="block-4-image">
                   <a href="shop-single.php"><img src="img/cloth_1.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Tank Top</a></h3>
-                  <p class="mb-0">Finding perfect t-shirt</p>
+                  <h3><a href="shop-single.php">Réparer</a></h3>
+                  <p class="mb-0">Réparer un prise</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
@@ -198,8 +124,8 @@
                   <a href="shop-single.php"><img src="img/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
+                  <h3><a href="shop-single.php">Fuite </a></h3>
+                  <p class="mb-0">Fuite au niveau du lavabo</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
@@ -210,21 +136,20 @@
                   <a href="shop-single.php"><img src="img/cloth_2.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Polo Shirt</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
+                  <h3><a href="shop-single.php">Spot Led</a></h3>
+                  <p class="mb-0">Installer des nouveaux spot</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+<div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
               <div class="block-4 text-center border">
                 <figure class="block-4-image">
-                  <a href="shop-single.php"><img src="img/cloth_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  <a href="shop-single.php"><img src="img/cloth_1.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">T-Shirt Mockup</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
+                  <h3><a href="shop-single.php">Réparer</a></h3>
+                  <p class="mb-0">Réparer un prise</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
@@ -235,33 +160,91 @@
                   <a href="shop-single.php"><img src="img/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Corater</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
+                  <h3><a href="shop-single.php">Fuite </a></h3>
+                  <p class="mb-0">Fuite au niveau du lavabo</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
-              <div class="block-4 text-center border">
-                <figure class="block-4-image">
-                  <a href="shop-single.php"><img src="img/cloth_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-                </figure>
-                <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Tank Top</a></h3>
-                  <p class="mb-0">Finding perfect t-shirt</p>
-                  <p class="text-primary font-weight-bold">$50</p>
-                </div>
-              </div>
-            </div>
-
             <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
               <div class="block-4 text-center border">
                 <figure class="block-4-image">
                   <a href="shop-single.php"><img src="img/cloth_2.jpg" alt="Image placeholder" class="img-fluid"></a>
                 </figure>
                 <div class="block-4-text p-4">
-                  <h3><a href="shop-single.php">Polo Shirt</a></h3>
-                  <p class="mb-0">Finding perfect products</p>
+                  <h3><a href="shop-single.php">Spot Led</a></h3>
+                  <p class="mb-0">Installer des nouveaux spot</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div>
+<div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/cloth_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Réparer</a></h3>
+                  <p class="mb-0">Réparer un prise</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Fuite </a></h3>
+                  <p class="mb-0">Fuite au niveau du lavabo</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/cloth_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Spot Led</a></h3>
+                  <p class="mb-0">Installer des nouveaux spot</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div><div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/cloth_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Réparer</a></h3>
+                  <p class="mb-0">Réparer un prise</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/shoe_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Fuite </a></h3>
+                  <p class="mb-0">Fuite au niveau du lavabo</p>
+                  <p class="text-primary font-weight-bold">$50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" data-aos="fade-up">
+              <div class="block-4 text-center border">
+                <figure class="block-4-image">
+                  <a href="shop-single.php"><img src="img/cloth_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+                </figure>
+                <div class="block-4-text p-4">
+                  <h3><a href="shop-single.php">Spot Led</a></h3>
+                  <p class="mb-0">Installer des nouveaux spot</p>
                   <p class="text-primary font-weight-bold">$50</p>
                 </div>
               </div>
@@ -312,141 +295,9 @@
             </div>
           </div>
 
-          <!-- Reminder aside -->
-          <div class="blog_right_sidebar">
-            <aside class="single_sidebar_widget post_category_widget">
-              <h4 class="widget_title">Category</h4>
-              <ul class="list cat-list">
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Resaurant food</p>
-                    <p>(37)</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Travel news</p>
-                    <p>(10)</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Modern technology</p>
-                    <p>(03)</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Product</p>
-                    <p>(11)</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Inspiration</p>
-                    <p>(21)</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="d-flex">
-                    <p>Health Care</p>
-                    <p>(09)</p>
-                  </a>
-                </li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </div>
+   </div>
+ </div>
+</div>
+</div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <div class="site-section site-blocks-2">
-            <div class="row justify-content-center text-center mb-5">
-              <div class="col-md-7 site-section-heading pt-4">
-                <h2>Categories</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
-                <a class="block-2-item" href="#">
-                  <figure class="image">
-                    <img src="img/women.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <span class="text-uppercase">Collections</span>
-                    <h3>Women</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-                <a class="block-2-item" href="#">
-                  <figure class="image">
-                    <img src="img/children.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <span class="text-uppercase">Collections</span>
-                    <h3>Children</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-                <a class="block-2-item" href="#">
-                  <figure class="image">
-                    <img src="img/men.jpg" alt="" class="img-fluid">
-                  </figure>
-                  <div class="text">
-                    <span class="text-uppercase">Collections</span>
-                    <h3>Men</h3>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Footer include -->
-   <?php 
-   include("includes/footer.php"); 
-   ?>
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-
-</body>
-
-</html>
+  @endsection

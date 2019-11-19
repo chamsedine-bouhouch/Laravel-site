@@ -12,8 +12,7 @@
 */
 
 
-
-Route::get('/', 'HomeController@index');
+// Route::get('/home', 'HomeController@index');
 Route::get('/about', 'AboutController@showabout');
 Route::get('/services', 'ServicesController@showservices');
 Route::get('/single-service', 'SingleServiceController@show_single_service');
@@ -24,7 +23,9 @@ Route::get('/single-blog', 'SingleBlogController@show_single_blog');
 
 Route::get('contact', 'ContactController@getForm');
 Route::post('contact', 'ContactController@postForm');
-Route::get('home', 'EmailController@getForm');
-Route::post('home', ['uses' => 'EmailController@postForm', 'as' => 'storeEmail']);
-Route::get('home', 'PostController@getForm');
-Route::post('home', ['uses' => 'PostController@postForm', 'as' => 'storeEmail']);
+Route::get('/', 'EmailController@getForm');
+
+Route::post('/form1', 'EmailController@techForm')->name('storePost');
+// // Route::post('home', ['uses' => 'EmailController@postForm', 'as' => 'storePost']);
+// // Route::get('home', 'PostController@getForm');
+Route::post('/form2',  'EmailController@postForm')->name('storeEmail');

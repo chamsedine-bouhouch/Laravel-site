@@ -20,7 +20,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">About Us</h1>
+            <h1 class="mb-2 bread">À Propos</h1>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Acceuil <i class="ion-ios-arrow-forward"></i></a></span> <span>À Propos <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>

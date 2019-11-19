@@ -25,6 +25,7 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style-Shop.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
 </head>
@@ -142,25 +143,23 @@
               </div>
             </div>
           </div>
-          
-     <div class="col-md">
+          <div class="col-md">
             <div class="ftco-footer-widget mb-5">
               <h2 class="ftco-heading-2">Recevez nos nouvelles</h2>
               
 
-              {!! Form::open(['route' => 'storeEmail']) !!}
+<!--               {!! Form::open(['route' => 'storeEmail']) !!}
               <div class="form-group  {!! $errors->has('email') ? 'has-error' : '' !!}">
                 {!! Form::email('email', null, array('class' => 'form-control', 'placeholder' => 'Entrez votre email')) !!}
                 {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
               </div>
               {!! Form::submit('Envoyer !', ['class' => 'btn btn-info pull-right']) !!}
               {!! Form::close() !!}
-
+ -->
 
 
             </div>
         </div>
-     
         <div class="row">
           <div class="col-md-12 text-center">
 

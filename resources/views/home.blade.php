@@ -1,6 +1,6 @@
 @extends('template')
   <!-- Header include -->
-  @section('home')
+  @section('contenu')
 
 <div class="collapse navbar-collapse" id="ftco-nav">
    <ul class="navbar-nav mr-auto">
@@ -24,7 +24,7 @@
       <div class="col-md-6 text ftco-animate pl-md-5">
         <h1 class="mb-4"> !تلوّج على فني صنايعي وثقة <span>Nos techniciens sont à votre sevice</span></h1>
         <h3 class="subheading">Un réseau de plus de 300 techniciens validés</h3>
-        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Request A Quote</a></p>
+        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Demander un Devis</a></p>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
     <div class="col-md-6 text ftco-animate pl-md-5">
       <h1 class="mb-4">!عندك مشكل محيرك وملقيتش الحل <span>le dépannage est notre expertise</span></h1>
       <h3 class="subheading"></h3>
-      <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Request A Quote</a></p>
+      <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Demander un Devis</a></p>
     </div>
   </div>
 </div>
@@ -48,7 +48,19 @@
 <section class="ftco-section ftco-no-pt ftco-margin-top">
  <div class="container">
   <div class="row">
-   <div class="col-md-4">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-md-4">
     <div class="request-quote">
      <div class="bg-primary py-4">
       <span class="subheading">Vous êtes un Professionnel</span>
@@ -56,53 +68,42 @@
     </div>
 
     
-    {!! Form::open(['route' => 'storePost']) !!}
-    <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
-      {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
+              {!! Form::open(['route' => 'storePost']) !!}
+                  <div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
+      {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => ' Nom']) !!}
       {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
     </div>
     <div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
-      {!! Form::text('prenom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
+      {!! Form::text('prenom', null, ['class' => 'form-control', 'placeholder' => ' Prenom']) !!}
       {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
     </div>   
     <div class="form-group {!! $errors->has('numero') ? 'has-error' : '' !!}">
-      {!! Form::text('numero', null, ['class' => 'form-control', 'placeholder' => 'Votre Numéro']) !!}
+      {!! Form::text('numero', null, ['class' => 'form-control', 'placeholder' => ' Numéro']) !!}
       {!! $errors->first('numero', '<small class="help-block">:message</small>') !!}
     </div>
 
-    <div class="form-group">
-     <div class="form-field">
-       <div class="select-wrap">
+    <div class="form-group {!! $errors->has('service') ? 'has-error' : '' !!}">
+      {!! Form::text('service', null, ['class' => 'form-control', 'placeholder' => ' Service']) !!}
+      {!! $errors->first('service', '<small class="help-block">:message</small>') !!}
+    </div>
 
-        <select name="" id="" class="form-control">
-         <option value="">Choisir votre Service</option>
-         <option value="">Électricité</option>
-         <option value="">Plomberie</option>
-         <option value="">Climatisation</option>
-         <option value="">Chauffage</option>
-         <option value="">Autre</option>
-       </select>
-     </div>
-   </div>
- </div> 
 
-  <div class="form-group">
-    <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-  </div>
-  <!-- <div class="form-group {!! $errors->has('texte') ? 'has-error' : '' !!}">
+   
+
+  <div class="form-group {!! $errors->has('texte') ? 'has-error' : '' !!}">
     {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
     {!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
-  </div > -->
+  </div >
+              {!! Form::submit('Postuler', ['class' => 'btn btn-info pull-right']) !!}
+              {!! Form::close() !!}
 
-  {!! Form::submit('Postuler !', ['class' => 'btn btn-primary py-3 px-4"'])!!}
-  {!! Form::close() !!}
 </div>      
-
-
+</div>
 <!--  <div class="form-group {!! $errors->has('categorie') ? 'has-error' : '' !!}">
 {!!Form::select('size', ['E' => 'Électricité', 'P' => 'Plomberie','C' => 'Climatisation', 'S' => 'Chauffage', 'A' => 'Autre'], null, ['placeholder' => 'Choisir votre catégorie '], ['class' => 'form-control form-control-lg']);!!}
 </div> -->
 
+    
 
 
 
@@ -110,15 +111,33 @@
 
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="col-md-8 wrap-about py-5 ftco-animate">
  <div class="heading-section mb-5">
    <h2 class="mb-4">AllooService réunit tous les dépanneurs du bâtiment </h2>
  </div>
  <div class="">
-   <p class="mb-5">On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-   <p><a href="#" class="btn btn-secondary px-5 py-3">Read More</a></p>
+   <p class="mb-5"> Nous vous presontons une plateforme complete de mise en relation entre demandeurs de service et les prestataires, le client sera accompagné dés le debut par nos conseillers en finissant par un techncien hautement qualifié et disponible dans les brefs delais.</p>
+   <p><a href="#" class="btn btn-secondary px-5 py-3">Lire plus</a></p>
  </div>
 </div>
 </div>
@@ -134,7 +153,7 @@
     <div class="col-md-8 text-center heading-section ftco-animate">
       <span class="subheading">Services</span>
      <h2 class="mb-4">Nos Services</h2>
-     <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>                     
+     <p>Nous avons choisi pour vous un paquet de services les plus demandés</p>                     
    
    </div>
  </div>
@@ -146,7 +165,7 @@
      </div>
      <div class="media-body p-2 mt-3">
       <h3 class="heading">Électricité</h3>
-      <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+      <p>On offre des prestations pour tous vos besoins en électricité.</p>
     </div>
   </div>      
 </div>
@@ -157,7 +176,7 @@
     </div>
     <div class="media-body p-2 mt-3">
       <h3 class="heading">Plomberie</h3>
-      <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+      <p>Nos dépanneur sont à votre disposition pour toutes pannes et installations en plomberie.</p>
     </div>
   </div>    
 </div>
@@ -168,7 +187,7 @@
     </div>
     <div class="media-body p-2 mt-3">
       <h3 class="heading">Climatisation</h3>
-      <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+      <p>Entretenir votre climatiseur ou demandez une nouvelle installation.</p>
     </div>
   </div>    
 </div>
@@ -179,7 +198,7 @@
     </div>
     <div class="media-body p-2 mt-3">
       <h3 class="heading">Chauffage</h3>
-      <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+      <p>Entretenir votre chaudière ou demandez une nouvelle installation.</p>
     </div>
   </div>      
 </div>
@@ -203,7 +222,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Disponible 24/7 </h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Notre réseau de techniciens est dispatché sur le grand Tunis et sont disponible meme pendant des heures tardives.</p>
               </div>
             </div>      
           </div>
@@ -214,7 +233,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Service de qualité</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Nos techniciens sont bien sélectionner pour vous offrir la meilleur prestation.</p>
               </div>
             </div>    
           </div>
@@ -225,7 +244,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Garantie assuré</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Allo Service offre une garantie sur les interventions et un service de suivi à la hauteur de vos attentes.</p>
               </div>
             </div>    
           </div>
@@ -236,7 +255,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Transparence de prix</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Plus de surprise sur les prix AllooService travail avec une grille tarifaire avec tous les techniciens.</p>
               </div>
             </div>      
           </div>
@@ -271,18 +290,18 @@
     <div class="col-md-8 text-center heading-section ftco-animate">
      <span class="subheading">Team</span>
      <h2 class="mb-4">Notre équipe de professionnels</h2>
-     <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+     <p>Une équipe jeune et passionnée avec des expert dans tous les domaines de dépannages.</p>
    </div>
  </div>	
  <div class="row">
    <div class="col-md-6 col-lg-3 ftco-animate">
     <div class="staff">
      <div class="img-wrap d-flex align-items-stretch">
-      <div class="img align-self-stretch" style="background-image: url(images/team-1.jpg);"></div>
+      <div class="img align-self-stretch" style="background-image: url(images/taha.jpg);"></div>
     </div>
     <div class="text pt-3 text-center">
-      <h3>Daren Wilson</h3>
-      <span class="position mb-2">Head Engineer</span>
+      <h3>Taha Khaled</h3>
+      <span class="position mb-2">CEO</span>
       <div class="faded">
        <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
        <ul class="ftco-social text-center">
@@ -298,11 +317,11 @@
 <div class="col-md-6 col-lg-3 ftco-animate">
   <div class="staff">
    <div class="img-wrap d-flex align-items-stretch">
-    <div class="img align-self-stretch" style="background-image: url(images/team-2.jpg);"></div>
+    <div class="img align-self-stretch" style="background-image: url(images/chams.jpg);"></div>
   </div>
   <div class="text pt-3 text-center">
-    <h3>Warren Parker</h3>
-    <span class="position mb-2">Ass. Engineer</span>
+    <h3>Chamseddine Bouhouch</h3>
+    <span class="position mb-2">COO</span>
     <div class="faded">
      <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
      <ul class="ftco-social text-center">
@@ -318,11 +337,11 @@
 <div class="col-md-6 col-lg-3 ftco-animate">
   <div class="staff">
    <div class="img-wrap d-flex align-items-stretch">
-    <div class="img align-self-stretch" style="background-image: url(images/team-3.jpg);"></div>
+    <div class="img align-self-stretch" style="background-image: url(images/wiem.jpg);"></div>
   </div>
   <div class="text pt-3 text-center">
-    <h3>Eva Gustavo</h3>
-    <span class="position mb-2">Engineer</span>
+    <h3>Wiem </h3>
+    <span class="position mb-2">CMO</span>
     <div class="faded">
      <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
      <ul class="ftco-social text-center">
@@ -341,8 +360,8 @@
     <div class="img align-self-stretch" style="background-image: url(images/team-4.jpg);"></div>
   </div>
   <div class="text pt-3 text-center">
-    <h3>Mike Henderson</h3>
-    <span class="position mb-2">Architect</span>
+    <h3>Naceur</h3>
+    <span class="position mb-2">Electricien</span>
     <div class="faded">
      <!-- <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p> -->
      <ul class="ftco-social text-center">
