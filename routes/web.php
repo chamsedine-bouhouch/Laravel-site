@@ -12,7 +12,9 @@
 */
 
 
-// Route::get('/home', 'HomeController@index');
+Route::get('/demand-1', 'HomeController@index');
+Route::get('/demand-2', 'HomeController@demand2');
+Route::get('/demand-3', 'HomeController@demand3');
 Route::get('/about', 'AboutController@showabout');
 Route::get('/services', 'ServicesController@showservices');
 Route::get('/single-service', 'SingleServiceController@show_single_service');

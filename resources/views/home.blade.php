@@ -60,7 +60,7 @@
 
 
 
-<div class="col-md-4">
+<div class="col-md-12">
     <div class="request-quote">
      <div class="bg-primary py-4">
       <span class="subheading">Vous êtes un Professionnel</span>

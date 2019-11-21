@@ -441,7 +441,7 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
+  padding: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
@@ -9903,3 +9903,12 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.form-shadow {
+  background:rgba(#13232f,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  
+}

@@ -11,6 +11,14 @@ class HomeController extends Controller
 {
     public function index()
     {
-            return view('home');
+            return view('demand-1');
+    }
+        public function demand2()
+    {
+            return view('demand-2');
+    }
+            public function demand3()
+    {
+            return view('demand-3');
     }
 }
