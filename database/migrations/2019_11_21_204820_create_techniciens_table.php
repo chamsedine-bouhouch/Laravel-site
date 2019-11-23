@@ -16,15 +16,16 @@ class CreateTechniciensTable extends Migration
         Schema::create('techniciens', function (Blueprint $table) {
             $table->increments('id');
             $table->string('specialite');
-            $table->int('experience');
+            $table->integer('experience');
             $table->string('region');
             $table->string('poste');
             $table->string('disponibilite'); 
             $table->float('revenue');
-            $table->integer('user id')->unsigned();
-            $table->foreign('user id')->refrences('id')->on('users');
+            $table->string('age');
+            $table->integer('usr_id')->unsigned();
+            $table->foreign('usr_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
-            $table->softDeletes();   
+           
         });
     }
 
@@ -35,6 +36,6 @@ class CreateTechniciensTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('techniciens');
     }
 }

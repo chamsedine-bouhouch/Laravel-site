@@ -13,13 +13,12 @@ class CreateParticuliersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('particuliers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('nb_intervention');
-            $table->integer('user id')->unsigned();
-            $table->foreign('user id')->refrences('id')->on('users');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
@@ -30,6 +29,6 @@ class CreateParticuliersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::drop('particuliers');
     }
 }

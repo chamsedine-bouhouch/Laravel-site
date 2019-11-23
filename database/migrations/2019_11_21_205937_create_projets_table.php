@@ -21,13 +21,9 @@ class CreateProjetsTable extends Migration
             $table->string('date_realisation');
             $table->string('image');            
             $table->string('note');
-            $table->string('ID_Technicien');
-
-            $table->integer('admin id')->unsigned();
-            $table->foreign('admin id')->refrences('id')->on('admins');
-            
+            $table->integer('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins')->onDelete('cascade');
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 

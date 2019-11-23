@@ -22,18 +22,14 @@ class CreateDemandesTable extends Migration
             $table->string('description');
             $table->string('date_intervention');
             $table->string('state');
-            
-            $table->integer('particulier id')->unsigned();
-            $table->foreign('particulier id')->refrences('id')->on('particuliers');
-
-            $table->integer('technicien id')->unsigned();
-            $table->foreign('technicien id')->refrences('id')->on('techniciens');
-
-            $table->integer('admin id')->unsigned();
-            $table->foreign('admin id')->refrences('id')->on('admins');
-            
+            $table->integer('particulier_id')->unsigned();
+            $table->foreign('particulier_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('technicien_id')->unsigned();
+            $table->foreign('technicien_id')->references('id')->on('techniciens')->onDelete('cascade');
+            $table->integer('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admins')->onDelete('cascade');
             $table->timestamps();
-            $table->softDeletes();
+          
         });
     }
 
