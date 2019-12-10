@@ -35,14 +35,15 @@
             {!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
             {!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
           </div>
+          <div class="form-group {!! $errors->has('numero') ? 'has-error' : '' !!}">
+            {!! Form::text('prenom', null, ['class' => 'form-control', 'placeholder' => 'Votre Prenom']) !!}
+            {!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
+          </div>
           <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
             {!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
             {!! $errors->first('email', '<small class="help-block">:message</small>') !!}
           </div>
-          <div class="form-group {!! $errors->has('numero') ? 'has-error' : '' !!}">
-            {!! Form::text('numero', null, ['class' => 'form-control', 'placeholder' => 'Votre Numéro']) !!}
-            {!! $errors->first('numero', '<small class="help-block">:message</small>') !!}
-          </div>
+
 
           <div class="form-group {!! $errors->has('texte') ? 'has-error' : '' !!}">
             {!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}

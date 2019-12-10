@@ -8,5 +8,5 @@ class Contact extends Model
 {
     protected $table = 'contacts';
     
-    public $timestamps = true;}
+    public $timestamps = true;
 }

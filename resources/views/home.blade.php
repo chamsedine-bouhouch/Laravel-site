@@ -268,12 +268,16 @@
     <section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
      <div class="overlay"></div>
      <div class="container">
-      <div class="row justify-content-center">
-       <div class="col-md-9 text-center">
+      <div class="row ">
+       <div class="col-md-6 text-center">
         <h2>Pour faciliter votre dépannage</h2>
         <p>AllooService met à votre disposition des prosfessionels de qualité dans votre zone</p>
         <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3"> Mieux nous connaître</a></p>
       </div>
+             <div class="col-md-6 text-center">
+             <img src="images/work-1.jpg" class="img-fluid"  alt="Colorlib Template">
+                          </div>
+
     </div>
   </div>
 </section>

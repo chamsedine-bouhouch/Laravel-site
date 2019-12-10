@@ -79,7 +79,7 @@
      <div class="form-field">
        <div class="select-wrap">
 
-        <select name="service" id="service" class="form-control">
+        <select name="service" id="service" class="custom-select">
          <option value="">Choisir votre Service</option>
          <option value="">Électricité</option>
          <option value="">Plomberie</option>

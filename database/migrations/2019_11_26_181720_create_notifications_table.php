@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateServicesTable extends Migration
+class CreateNotificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateServicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('notifications', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titre');
+            $table->string('title');
             $table->string('categorie');
-            $table->string('type');
-            $table->string('description');
-            $table->float('prix');
             $table->string('image');
-            $table->timestamps();
+            $table->boolean('read');
+            $table->boolean('shown');
 
+            $table->timestamps();
         });
     }
 
@@ -33,6 +32,6 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('notifications');
     }
 }
