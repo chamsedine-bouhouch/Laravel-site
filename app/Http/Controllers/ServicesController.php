@@ -14,9 +14,28 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        $services = Service::where('categorie','électricité')->paginate(5);
+    	$services_db = Service::get();
+
+    	$services = new Service;
+        // $services = Service::where('categorie','électricité')->paginate(5);
         // $installation = Service::orderBy('type','installation');
-        return view('services.index')->with('services',$services);
+        if (request()->has('categorie')){
+        	$services = $services->where('categorie',request('categorie'));
+        	
+        }
+        if ( request()->has('type')){
+        	$services = $services->where('type',request('type'));
+        } 
+
+        	$services = $services->paginate(9)->appends([
+        		'categorie' => request('categorie'),
+        		'type' => request('type'),
+        	]);
+       
+      
+
+
+        return view('services.index',compact('services','services_db'));
     }
 
     /**
@@ -49,7 +68,17 @@ class ServicesController extends Controller
     public function show($id)
     {
         $service = Service::find($id);
-        return view('services.show')->with('service',$service);  
+        $cat=$service->categorie;
+        // $similarServices = new Service;
+        $similarServices =Service::where('categorie', $cat)->get();
+
+        
+        	// $similarServices->where('categorie',request('categorie'));
+        	
+   
+
+      
+        return view('services.show',compact('service','similarServices'));  
     }
 
     /**

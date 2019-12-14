@@ -36,6 +36,6 @@ Route::get('demand-1', function () {
 Route::get('demand-2', function () {
     return view('demand-1');
 });
-Route::get('demand-3', function () {
-    return view('db-test');
-});
+// Route::get('demand-3', function () {
+//     return view('db-test');
+// });

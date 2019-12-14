@@ -69,6 +69,10 @@
           
               <div class="comment-form-wrap pt-5">
                 <h3 class="mb-5 h4 font-weight-bold text-center">Demandez une intervention en <span style="color:blue;">{{$service->categorie}}</span></h3>
+               
+                  
+
+               
                 <form action="#" class="p-5 bg-light">
                    <div class="form-row">
                     <div class="col-md-4 mb-3">
@@ -82,10 +86,10 @@
          <option value="">Choisir la catégorie</option>
 
 
-         <option @if($service->categorie == "électricité") selected = "selected" @endif value="">Électricité</option>
-         <option  value="">Plomberie</option>
-         <option value="">Climatisation</option>
-         <option value="">Chauffage</option>
+         <option @if($service->categorie == "electricite") selected = "selected" @endif value="electricite">Électricité</option>
+         <option @if($service->categorie == "plomberie") selected = "selected" @endif value="plomberie">Plomberie</option>
+         <option @if($service->categorie == "climatisation") selected = "selected" @endif value="climatisation">Climatisation</option>
+         <option @if($service->categorie == "chauffage") selected = "selected" @endif value="chauffage">Chauffage</option>
          <option value="">Autre</option>
        </select>
      </div>
@@ -100,9 +104,9 @@
        <div class="select-wrap">
 
         <select name="preference" id="preference" class="custom-select">
-         <option value="">Choisir l'horaire</option>
-         <option value="">Installation</option>
-         <option value="">Dépannage</option>
+         <option value="">Choisir un type</option>
+         <option @if($service->type == "installation") selected = "selected" @endif value="installation">Installation</option>
+         <option @if($service->type == "depannage") selected = "selected" @endif value="depannage">Dépannage</option>
       
        </select>
      </div>
@@ -115,13 +119,19 @@
      <div class="form-field">
        <div class="select-wrap">
 
-        <select name="preference" id="preference" class="custom-select">
+        <select name="intervention" id="intervention" class="custom-select">
          <option value="">Choisir l'intervention</option>
-         <option value="">la matinée</option>
-         <option value="">L'après midi</option>
-         <option value="">le soir</option>
-         <option value="">les week-ends</option>
-         <option value="">Autre</option>
+
+         @foreach ($similarServices as $similarService) {
+         <option value=""> {{$similarService->titre}}</option>
+
+        }
+         @endforeach
+       
+
+
+
+
        </select>
      </div>
    </div>

@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Personalised stylesheet: myStyle -->
+  <link rel="stylesheet" href="css/myStyle.css">
+
   <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
 </head>
 <body>
