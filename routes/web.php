@@ -39,3 +39,5 @@ Route::get('demand-2', function () {
 // Route::get('demand-3', function () {
 //     return view('db-test');
 // });
+Route::get('/live_search', 'LiveSearch@index');
+Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
